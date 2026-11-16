@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReadSlideIPADCell" customModule="Holy_Reads" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="600"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="600"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img01" translatesAutoresizingMaskIntoConstraints="NO" id="bO4-DY-wsy">
+                        <rect key="frame" x="10" y="20" width="365" height="456"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="456" id="Qsa-gm-lsb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Read book in your phone." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-Io-6vQ">
+                        <rect key="frame" x="10" y="484" width="365" height="29.5"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.46666666670000001" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pg1" translatesAutoresizingMaskIntoConstraints="NO" id="4lg-SX-i7Y">
+                        <rect key="frame" x="160" y="530.5" width="65" height="15"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsJ-Cc-wGa">
+                        <rect key="frame" x="20" y="546" width="70" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="4mZ-kO-C4G"/>
+                            <constraint firstAttribute="width" constant="70" id="pH9-rV-kHb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                        <state key="normal" title="Skip">
+                            <color key="titleColor" red="0.1647058824" green="0.2666666667" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdH-y3-jgn">
+                        <rect key="frame" x="295" y="546" width="70" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="OZK-jF-t3P"/>
+                            <constraint firstAttribute="width" constant="70" id="UTA-cn-hGr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                        <state key="normal" title="Next">
+                            <color key="titleColor" red="0.1647058824" green="0.2666666667" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="qdH-y3-jgn" secondAttribute="trailing" constant="4" id="6l3-3h-SE5"/>
+                <constraint firstAttribute="trailing" secondItem="Vph-Io-6vQ" secondAttribute="trailing" constant="10" id="JgQ-PA-qoj"/>
+                <constraint firstAttribute="bottom" secondItem="rsJ-Cc-wGa" secondAttribute="bottom" constant="20" id="LVC-4Q-Cdz"/>
+                <constraint firstItem="rsJ-Cc-wGa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Nb7-ay-4kP"/>
+                <constraint firstItem="bO4-DY-wsy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="SQ9-jL-GgD"/>
+                <constraint firstItem="qdH-y3-jgn" firstAttribute="top" secondItem="4lg-SX-i7Y" secondAttribute="bottom" constant="0.5" id="f6Z-CT-ncW"/>
+                <constraint firstItem="bO4-DY-wsy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="i4C-Sg-hXX"/>
+                <constraint firstAttribute="bottomMargin" secondItem="qdH-y3-jgn" secondAttribute="bottom" constant="20" id="jnb-5o-ktc"/>
+                <constraint firstItem="Vph-Io-6vQ" firstAttribute="top" secondItem="bO4-DY-wsy" secondAttribute="bottom" constant="8" id="kkD-ms-Icd"/>
+                <constraint firstAttribute="trailing" secondItem="bO4-DY-wsy" secondAttribute="trailing" constant="10" id="oSb-hz-CZX"/>
+                <constraint firstItem="rsJ-Cc-wGa" firstAttribute="top" secondItem="4lg-SX-i7Y" secondAttribute="bottom" constant="0.5" id="pAG-s3-Iad"/>
+                <constraint firstItem="Vph-Io-6vQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="pWC-eH-Lt5"/>
+                <constraint firstItem="4lg-SX-i7Y" firstAttribute="centerX" secondItem="Vph-Io-6vQ" secondAttribute="centerX" id="vwp-xI-eaT"/>
+                <constraint firstItem="4lg-SX-i7Y" firstAttribute="top" secondItem="Vph-Io-6vQ" secondAttribute="bottom" constant="17" id="xPU-Tt-SYw"/>
+            </constraints>
+            <connections>
+                <outlet property="btnSkip" destination="rsJ-Cc-wGa" id="4yb-Mw-jyV"/>
+                <outlet property="imgIntro" destination="bO4-DY-wsy" id="KVH-NI-wYo"/>
+                <outlet property="imgSelectedPage" destination="4lg-SX-i7Y" id="r2z-el-D8p"/>
+                <outlet property="lblHeading" destination="Vph-Io-6vQ" id="A1A-KG-m3e"/>
+                <outlet property="nextBtn" destination="qdH-y3-jgn" id="Bur-GQ-9Lc"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="75.669642857142847"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img01" width="218" height="312"/>
+        <image name="pg1" width="65" height="15"/>
+    </resources>
+</document>

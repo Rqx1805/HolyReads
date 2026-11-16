@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DownloadEnitity" representedClassName="DownloadEnitity" syncable="YES">
+        <attribute name="arr_Audio" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="arr_highlight" optional="YES" attributeType="Binary"/>
+        <attribute name="audioUrl" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="author_name" optional="YES" attributeType="String"/>
+        <attribute name="book_image" optional="YES" attributeType="Binary"/>
+        <attribute name="book_name" optional="YES" attributeType="String"/>
+        <attribute name="chapter_name" optional="YES" attributeType="Transformable"/>
+        <attribute name="contains_Audio" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="contains_Book" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="contains_Video" optional="YES" attributeType="Boolean" allowsExternalBinaryDataStorage="YES" usesScalarValueType="YES"/>
+        <attribute name="descript" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="FolioReaderdatabase" representedClassName="FolioReaderdatabase" syncable="YES" codeGenerationType="class">
+        <attribute name="app_id" optional="YES" attributeType="String"/>
+        <attribute name="book_id" optional="YES" attributeType="String"/>
+        <attribute name="chapter_name" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="page_number" optional="YES" attributeType="String"/>
+        <attribute name="rangy" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="user_id" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="DownloadEnitity" positionX="-63" positionY="-18" width="128" height="209"/>
+        <element name="FolioReaderdatabase" positionX="-63" positionY="63" width="128" height="178"/>
+    </elements>
+</model>
